@@ -71,6 +71,13 @@ Ejemplo de input:
 AA123 JFK-LAX 15:30, ON_TIME, Gate: B12
 ```
 
+### Reglas:
+- Código de vuelo: 2 letras + 3 dígitos (ej. `AA123`)
+- IATA origen y destino: 3 letras (ej. `JFK-LAX`)
+- Hora: formato `HH:MM`
+- Estado: `ON_TIME`, `DELAYED`, `CANCELLED`
+- Gate: palabra `Gate:` + letra + 2 dígitos (ej. `B12`)
+  
 ## Imagenes
 
 Terminal
@@ -82,12 +89,6 @@ Arbol
 ![image](https://github.com/user-attachments/assets/e0eab4cc-78fe-4111-86dd-bb81a89601cb)
 
 
-### Reglas:
-- Código de vuelo: 2 letras + 3 dígitos (ej. `AA123`)
-- IATA origen y destino: 3 letras (ej. `JFK-LAX`)
-- Hora: formato `HH:MM`
-- Estado: `ON_TIME`, `DELAYED`, `CANCELLED`
-- Gate: palabra `Gate:` + letra + 2 dígitos (ej. `B12`)
 
 ## 📁 Estructura del Proyecto
 
