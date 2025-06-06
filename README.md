@@ -42,21 +42,27 @@ status: "DELAYED", gate: "B12",
 
 ## 🚀 Instalación
 
+
 1. Clonar el repositorio:
    ```bash
    git clone https://github.com/lemosadrian08/51785REC
    cd 51785REC
    ```
 
-2. Instalar dependencias:
+2. Abrir el proyecto en Visual Studio Code
    ```bash
-   npm install
+   code .
    ```
+File → Open Folder… → Seleccioná
+
+4. Ejecutar
+Desde la terminal integrada de Visual Studio Code (con el proyecto ya abierto), ejecutá el siguiente comando:
+
+npm start
 
 3. Generar el parser:
    - En Visual Studio Code, asegurate de que `Flight.g4` está en la raíz.
    - Presionar **F5** con el archivo abierto (si tenés configurado `.vscode/settings.json`).
-   - Los archivos se generan en `/generated`.
 
 ## 🧪 Pruebas
 
@@ -73,10 +79,18 @@ node index.js
 
 ## 📄 Estructura esperada
 
-Formato válido:
+Ejemplo de input:
 ```
 AA123 JFK-LAX 15:30, ON_TIME, Gate: B12
 ```
+
+## Imagenes
+Terminal
+![image](https://github.com/user-attachments/assets/9b6704b6-0582-4795-9dd8-e7156d2bd32e)
+
+Arbol
+![image](https://github.com/user-attachments/assets/e0eab4cc-78fe-4111-86dd-bb81a89601cb)
+
 
 ### Reglas:
 - Código de vuelo: 2 letras + 3 dígitos (ej. `AA123`)
