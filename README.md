@@ -57,25 +57,13 @@ File → Open Folder… → Seleccioná
 
 3. Ejecutar
 Desde la terminal integrada de Visual Studio Code (con el proyecto ya abierto), ejecutá el siguiente comando:
-```bash
-npm start
- ```
+   ```bash
+   npm start
+    ```
 4. Generar el parser:
    - En Visual Studio Code, asegurate de que `Flight.g4` está en la raíz.
    - Presionar **F5** con el archivo abierto (si tenés configurado `.vscode/settings.json`).
 
-## 🧪 Pruebas
-
-Se incluyen archivos de prueba:
-
-- ✅ `valido1.txt`, `valido2.txt`, `valido3.txt`  
-- ❌ `invalido1.txt`, `invalido2.txt`, `invalido3.txt`
-
-Para ejecutar el analizador con `input.txt`:
-
-```bash
-node index.js
-```
 
 ## 📄 Estructura esperada
 
