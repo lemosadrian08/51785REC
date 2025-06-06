@@ -55,12 +55,12 @@ status: "DELAYED", gate: "B12",
    ```
 File → Open Folder… → Seleccioná
 
-4. Ejecutar
+3. Ejecutar
 Desde la terminal integrada de Visual Studio Code (con el proyecto ya abierto), ejecutá el siguiente comando:
-
+```bash
 npm start
-
-3. Generar el parser:
+ ```
+4. Generar el parser:
    - En Visual Studio Code, asegurate de que `Flight.g4` está en la raíz.
    - Presionar **F5** con el archivo abierto (si tenés configurado `.vscode/settings.json`).
 
