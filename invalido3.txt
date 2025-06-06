@@ -1,0 +1,1 @@
+AD123 JFK-LAX 15:30, RETRASADO, Gate: B12       // Estado no válido (no está en la lista)

@@ -1,0 +1,1 @@
+AD123 JFK-LAX 1530, DELAYED, Gate: B12          // Hora sin dos puntos
