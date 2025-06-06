@@ -3,7 +3,9 @@
 Este proyecto implementa un analizador léxico y sintáctico para descripciones de vuelos usando **ANTLR4** y **JavaScript**, conforme a la gramática definida en `Flight.g4`.
 
 ## ✍️ Tarea: Construcción de un Analizador con ANTLR4 y JavaScript Tema: 25914_17
-Se proporciona una gramática en notación EBNF que describe un lenguaje específico. Utilizando ANTLR4 con JavaScript, implemente un analizador que procese un archivo de entrada (input.txt) con código fuente escrito en dicho lenguaje. <vuelo>::= <codigo_vuelo><aeropuerto_salida> "-" <aeropuerto_llegada> hora;
+Se proporciona una gramática en notación EBNF que describe un lenguaje específico. Utilizando ANTLR4 con JavaScript, implemente un analizador que procese un archivo de entrada (input.txt) con código fuente escrito en dicho lenguaje.
+
+<vuelo>::= <codigo_vuelo><aeropuerto_salida> "-" <aeropuerto_llegada> hora;
 <codigo_vuelo>::= <letra><letra><digito><digito><digito>; (* Ej: "AA123" *)
 <aeropuerto>::= <letra><letra><letra>; (* Utilizar Código IATA *)
 <hora>::=("00".."23" ":" "00".."59" ) | "NOW";
