@@ -12,8 +12,8 @@ Este proyecto implementa un analizador léxico y sintáctico para descripciones 
 
 1. Clonar el repositorio:
    ```bash
-   git clone https://github.com/lemosadrian08/51785RECESTE.git
-   cd 51785RECESTE
+   git clone https://github.com/lemosadrian08/51785REC
+   cd 51785REC
    ```
 
 2. Instalar dependencias:
