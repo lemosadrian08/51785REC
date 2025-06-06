@@ -2,6 +2,36 @@
 
 Este proyecto implementa un analizador léxico y sintáctico para descripciones de vuelos usando **ANTLR4** y **JavaScript**, conforme a la gramática definida en `Flight.g4`.
 
+## ✍️ Tarea: Construcción de un Analizador con ANTLR4 y JavaScript Tema: 25914_17
+Se proporciona una gramática en notación EBNF que describe un lenguaje específico. Utilizando ANTLR4 con JavaScript, implemente un analizador que procese un archivo de entrada (input.txt) con código fuente escrito en dicho lenguaje. <vuelo>::= <codigo_vuelo><aeropuerto_salida> "-" <aeropuerto_llegada> hora;
+<codigo_vuelo>::= <letra><letra><digito><digito><digito>; (* Ej: "AA123" *)
+<aeropuerto>::= <letra><letra><letra>; (* Utilizar Código IATA *)
+<hora>::=("00".."23" ":" "00".."59" ) | "NOW";
+<fecha>::= <digito><digito> "/" <digito><digito> "/" <digito><digito>; (* DD/MM/YY *)
+<estado>::= "ON_TIME" | "DELAYED" | "CANCELLED";
+<operador>::= <letra> { letra | "" };
+(* Ej: "American Airlines" *)
+<asiento>::=("A" | "B" | "C" | "D" | "E" | "F" ) <digito> { <digito>}; <puerta>::= <letra><digito> { <digito> };
+<terminal>::=<digito> | <letra> ;
+El analizador deberá realizar las siguientes tareas:
+(* Ej: "B12" *)
+1. Análisis léxico y sintáctico: realizar el análisis léxico y sintáctico sobre el código fuente e informar si la entrada es correcta o contiene errores. En caso de errores, indicar la línea en la que ocurren y la causa del problema.
+2. Tabla de lexemas-tokens: Generar una tabla que contenga los lexemas y sus respectivos tokens reconocidos durante el análisis léxico.
+3. Árbol de análisis sintáctico: Construir y mostrar el árbol de análisis sintáctico concreto de la entrada. Puede representarse en formato de texto.
+4. Interpretación: Traducir el código fuente al lenguaje JavaScript y ejecutarlo como lo haría un intérprete básico.
+El desarrollo debe entregarse cumpliendo las pautas para la entrega establecidas en el documento Pautas de trabajo para analizador.
+Ejemplo de código
+AA123 JFK-LAX 15:30, DELAYED, Gate: B12
+Traduccion a JavaScript
+const flight = {
+code: "AA123",
+from: "JFK",
+to: "LAX",
+time: "15:30",
+status: "DELAYED", gate: "B12",
+};
+
+
 ## 📚 Requisitos
 
 - Node.js (versión 14+)
