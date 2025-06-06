@@ -85,10 +85,13 @@ AA123 JFK-LAX 15:30, ON_TIME, Gate: B12
 ```
 
 ## Imagenes
+
 Terminal
+
 ![image](https://github.com/user-attachments/assets/9b6704b6-0582-4795-9dd8-e7156d2bd32e)
 
 Arbol
+
 ![image](https://github.com/user-attachments/assets/e0eab4cc-78fe-4111-86dd-bb81a89601cb)
 
 
